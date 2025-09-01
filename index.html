@@ -1,215 +1,237 @@
 <!DOCTYPE HTML>
-<!-- 
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) -->
-
 <html>
-	<head>
-		<title>Portfolio website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Portfolio website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.wide-tile {
+			grid-column: 1 / -1;   /* span from first to last column */
+			height: 400px;         /* set explicit height */
+		}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		.wide-tile .image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Port_folio website</strong><span></span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
+		.nav-links {
+			position: absolute;
+			top: 20px;
+			right: 40px;
+			display: flex;
+			gap: 20px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.nav-links a {
+			color: white;
+			text-decoration: none;
+		}
+		.nav-links a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<div class="nav-links">
+				<a href="index.html">Home</a>
+				<a href="intro.html">About</a>
+				<a href="project.html">Projects</a>
+				<a href="resume.pdf" target="_blank">Resume</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</header>
+
+		<!-- Banner -->
+ <section id="banner" class="major" style="
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2) 100%), 
+                url('images/data_banner.jpg') center/cover no-repeat;
+    border-radius: 15px; 
+    padding: 60px 20px; 
+    text-align: center; 
+    margin: 20px 0;
+"> 
+    <div class="inner">
+        <header class="content">
+            <h1 style="font-size: 3rem;">Tribhuwan Singh</h1>
+        </header>
+        <div class="content" style="margin-top: 20px;">
+            <p style="font-size: 1.2rem;">For Introduction</p>
+            <ul class="actions" style="margin-top: 20px;">
+                <li>
+                    <a href="intro.html" class="button next scrolly">
+                        Click here
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One -->
+			<section id="one" class="tiles">
+				<article class="wide-tile">
+					<span class="image">
+						<img src="images/projects.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="project.html" class="link">Projects</a></h3>
+						<p>To Dive in, click here</p>
 					</header>
+				</article>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+				<article>
+					<span class="image">
+						<img src="images/machine.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="ML.html" class="link">Machine Learning</a></h3>
+						<p>To Dive in, click here</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/deep.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="DL.html" class="link">Deep Learning</a></h3>
+						<p>To Dive in, click here</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/data_structure.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="DS.html"target="_blank" class="link">Data Structure and Algorithm</a></h3>
+						<p>To Dive in, click here</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/DBMS.webp" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="DBMS.html" class="link">Database management System</a></h3>
+						<p>To Dive in, click here</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/LangChain.webp" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="landing.html" class="link">GenAI (Langchain)</a></h3>
+						<p>To Dive in, click here</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/develope.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3><a href="landing.html" class="link">Developement</a></h3>
+						<p>To Dive in, click here</p>
+					</header>
+				</article>
+			</section>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Tribhuwan singh</h1>
-							</header>
-							<div class="content">
-								<p>Let's know about me more<br />
-								</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
+		</div>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="inner">
+				<section>
+					<form method="post" action="https://formspree.io/f/mkgrybqr">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="6"></textarea>
 							</div>
 						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">ML projects</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">DL projects</a></h3>
-										<p>feugiat amet tempus</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">24ms0159@iitism.ac.in</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>+919161245219</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>D-223 Amber hostel, IIT Dhanbad<br />
-										Jharkhand<br />
-										INDIA</span>
-									</div>
-								</section>
-							</section>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Clear" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split">
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-envelope"></span>
+							<h3>Email</h3>
+							<a href="#">24ms0159@iitism.ac.in</a>
 						</div>
 					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/profile.php?id=100086745042948" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-phone"></span>
+							<h3>Phone</h3>
+							<span>+919161245219</span>
 						</div>
-					</footer>
-
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon solid alt fa-home"></span>
+							<h3>Address</h3>
+							<span>D-223 Amber hostel, IIT Dhanbad<br />
+							Jharkhand<br />
+							INDIA</span>
+						</div>
+					</section>
+				</section>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/tribhuwan.singh.3950178" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/darkvirat" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/tribhuwan-singh-2aa04a304/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
 
-	</body>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Introduction</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>About Me</h1>
+    <p>
+      I’m <b>Tribhuwan Singh</b>, a <b>PG student in Mathematics and Computing at IIT (ISM) Dhanbad</b>.  
+      With a strong foundation in mathematics, statistics, and computing, I’m deeply interested in pursuing a career in 
+      <b>Data Science and Machine Learning</b>.  
+      I enjoy working with data, uncovering patterns, and applying algorithms to real-world challenges.  
+      My goal is to build impactful solutions by combining analytical thinking with modern computational tools.
+    </p>
+    <div class="button-container">
+      <button onclick="goBack()">Go Back to My Work</button>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
